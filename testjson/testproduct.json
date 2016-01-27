@@ -1,0 +1,169 @@
+{
+  "from": 1,
+  "to": 1,
+  "total": 1,
+  "currentPage": 1,
+  "totalPages": 1,
+  "queryTime": "0.003",
+  "totalTime": "0.008",
+  "partial": false,
+  "canonicalUrl": "/v1/products(modelNumber=\"fftr1817lw\"&active=false)?show=URL,modelNumber,name,sku,largeImage,height,width,depth,salePrice,features.feature,details.name,details.value&format=json&apiKey=meaeshrr3dkdau7rwk97heex",
+  "products": [
+    {
+      "url": null,
+      "modelNumber": "Fftr1817lw",
+      "name": "Frigidaire - 18.2 Cu. Ft. Top-Mount Refrigerator - White",
+      "sku": 9957072,
+      "largeImage": "http://img.bbystatic.com/BestBuy_US/images/products/9957/9957072_sb.jpg",
+      "height": null,
+      "width": "30\"",
+      "depth": "32-1/4\"",
+      "salePrice": 609.99,
+      "features": [
+        {
+          "feature": "From our expanded online assortment; not available in all Best Buy stores"
+        },
+        {
+          "feature": "Single knob control\nFor quick and easy cooling adjustments."
+        },
+        {
+          "feature": "2 sliding glass shelves\nFor easy access to contents at the back of the refrigerator."
+        },
+        {
+          "feature": "2 clear humidity-controlled crispers\nKeep produce fresh longer to minimize waste. A dairy door houses butter and cheese to lock in freshness."
+        },
+        {
+          "feature": "Gallon door storage\nStore milk and juice containers to free interior shelf space."
+        },
+        {
+          "feature": "Icemaker-ready\nWith optional kit IM-115 (not included)."
+        },
+        {
+          "feature": "Reversible door hinges\nCan be fastened on the left or right for optimal placement in your kitchen."
+        }
+      ],
+      "details": [
+        {
+          "name": "ENERGY STAR Certified",
+          "value": "No"
+        },
+        {
+          "name": "Estimated Yearly Electricity Use (kWh)",
+          "value": "479"
+        },
+        {
+          "name": "Estimated Yearly Operating Cost",
+          "value": "$51"
+        },
+        {
+          "name": "Color Category",
+          "value": "White"
+        },
+        {
+          "name": "Cabinet Side Color",
+          "value": "White"
+        },
+        {
+          "name": "Door-Handle Color",
+          "value": "White"
+        },
+        {
+          "name": "Counter Depth",
+          "value": "No"
+        },
+        {
+          "name": "Height to Top of Refrigerator (in.)",
+          "value": "65-3/8"
+        },
+        {
+          "name": "Height to Top of Door Hinge (in.)",
+          "value": "66-1/8"
+        },
+        {
+          "name": "Depth Less Door (in.)",
+          "value": "26-5/8"
+        },
+        {
+          "name": "Depth Without Handles (in.)",
+          "value": "29-7/8"
+        },
+        {
+          "name": "Depth Including Handles (in.)",
+          "value": "32-1/4"
+        },
+        {
+          "name": "Depth with Door 90&#176; Open (in.)",
+          "value": "58-1/8"
+        },
+        {
+          "name": "Total Capacity (cu. ft.)",
+          "value": "18.2"
+        },
+        {
+          "name": "Capacity: Freezer (cu. ft.)",
+          "value": "4.1"
+        },
+        {
+          "name": "Capacity: Fresh-Food (cu. ft.)",
+          "value": "14.1"
+        },
+        {
+          "name": "Thru-the-Door Ice Dispenser",
+          "value": "No"
+        },
+        {
+          "name": "Thru-the-Door Water Dispenser",
+          "value": "No"
+        },
+        {
+          "name": "Refrigerator Shelf Construction",
+          "value": "Glass"
+        },
+        {
+          "name": "Temperature Control Type",
+          "value": "Analog"
+        },
+        {
+          "name": "Water Filtration",
+          "value": "No"
+        },
+        {
+          "name": "Surface Finish",
+          "value": "Textured"
+        },
+        {
+          "name": "Style",
+          "value": "Top-mount"
+        },
+        {
+          "name": "Child Lock",
+          "value": "No"
+        },
+        {
+          "name": "Door-Open Alarm",
+          "value": "No"
+        },
+        {
+          "name": "Door Swing",
+          "value": "Reversible"
+        },
+        {
+          "name": "Factory-Installed Icemaker",
+          "value": "No"
+        },
+        {
+          "name": "Gallon Door Storage",
+          "value": "Yes"
+        },
+        {
+          "name": "Humidity-Controlled Crisper",
+          "value": "Yes"
+        },
+        {
+          "name": "pricematch",
+          "value": "yes"
+        }
+      ]
+    }
+  ]
+}
