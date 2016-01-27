@@ -1,4 +1,5 @@
 var request = require('request');
+var apikeys = require('../lib/apis/apikeys');
 
 function SearchModels(router) {
     //var apikeys = router.get('./lib/apis').apikeys;
@@ -7,18 +8,19 @@ function SearchModels(router) {
 
     this.getForm = function(req,res){
       console.log('got Search request');
-      console.log(req.query.searchModel);
-      res.render ('searchresults');
+      console.log(req.query.searchTerm);
+      res.render ('index');
     }
 
     this.searchAll = function(req,res) {
-      var searchTerm = req.query.searchModel;
-      var url = "http://api.bestbuy.com/v1/products(modelNumber="+searchTerm+"&active=true)?show=URL,modelNumber,name,sku,height,width,depth,salePrice,features.feature,details.name,details.value&apiKey=meaeshrr3dkdau7rwk97heex&format=json";
+      var searchTerm = req.query.searchTerm;
+      var url = "http://api.bestbuy.com/v1/products(modelNumber="+searchTerm+"*)?show=modelNumber,UPC,name,manufacturer,largeImage,salePrice&apiKey="+apikeys.bbapi+"&format=json";
       var json = null;
       var request = require('request');
 
-      //Lets try to make a HTTPS GET request to modulus.io's website.
-      //All we did here to make HTTPS call is changed the `http` to `https` in URL.
+      //write logic to make sure we have a search term or error out
+
+      //call BB Api
       request(url, function (error, response, body) {
           //Check for error
           if(error){
@@ -31,11 +33,13 @@ function SearchModels(router) {
           }
 
           //All is good. Print the body
-          //console.log(body); // Show the HTML for the Modulus homepage.
-          json = body;
+          console.log(typeof body); // Show the HTML for the Modulus homepage.
+          json = JSON.parse(body);
+          console.log(json);
+          res.render('searchresults',{'results':json});
       });
-      console.log(json);
-      res.render('searchresults',json);
+      //console.log(json);
+
     }
 }
 

@@ -5,13 +5,16 @@
   "currentPage": 1,
   "totalPages": 1,
   "queryTime": "0.003",
-  "totalTime": "0.008",
+  "totalTime": "0.012",
   "partial": false,
-  "canonicalUrl": "/v1/products(modelNumber=\"fftr1817lw\"&active=false)?show=URL,modelNumber,name,sku,largeImage,height,width,depth,salePrice,features.feature,details.name,details.value&format=json&apiKey=meaeshrr3dkdau7rwk97heex",
+  "canonicalUrl": "/v1/products(modelNumber=\"fftr1817lw\"&active=false)?show=URL,manufacturer,active,modelNumber,name,sku,largeImage,height,width,depth,salePrice,features.feature,details.name,details.value&format=json&apiKey=meaeshrr3dkdau7rwk97heex",
   "products": [
     {
       "url": null,
+      "manufacturer": "Frigidaire",
+      "active": false,
       "modelNumber": "Fftr1817lw",
+      "upc":"011111111110",
       "name": "Frigidaire - 18.2 Cu. Ft. Top-Mount Refrigerator - White",
       "sku": 9957072,
       "largeImage": "http://img.bbystatic.com/BestBuy_US/images/products/9957/9957072_sb.jpg",
