@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 	function onSubmitButtonClick(e) {
 		var URL = '/search?' +
-		          'searchModel=' + $('#searchModel').val()
+		          'searchTerm=' + $('#searchTerm').val()
 
 		$.ajax({
 			type: 'GET',

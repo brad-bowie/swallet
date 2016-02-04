@@ -2,7 +2,7 @@
     <div class="col-md-12">
       <div class="panel panel-default">
         <div class="panel-heading clearfix">
-          <h3 class="panel-title">Found <%= results.total %> results:</h3>
+          <h3 class="panel-title">Found <%= results.to %> categories:</h3>
         </div>
 		<% if(results && results.total) { %>
 			<br />
@@ -13,17 +13,17 @@
 		          <th>Model Number</th>
 		          <th>Manufacturer</th>
 		          <th>Current Price</th>
+
 		        </tr>
       	</thead>
       	<tbody>
 					<% for(var i = 0; i < results.to; i++) { %>
-						<% var result = results.products[i]; %>
-
-						<tr <tr class='clickable-row' onclick="document.location = '/model?modelNumber=<%=result.modelNumber%>';">
-              <td><img src='<%= result.largeImage %>'><br><strong><%= result.modelNumber %></strong></td>
-							<td><%= result.name %></td>
-							<td><%= result.manufacturer %><br><%= result.upc %></td>
-							<td><%= result.salePrice %></td>
+						<% var result = results.categories[i]; %>
+						<tr <tr class='clickable-row'>
+              <td><%= result.name %></strong></td>
+              <% for(var z = 0; z < results.categories[i].subCategories.length; z++) { %>
+                <% var result = results.categories[i].subCategories[z]; %>
+							<td><%= result.name %></td><% } %>
 						</tr>
 
 					<% } %>
