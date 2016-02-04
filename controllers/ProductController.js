@@ -9,15 +9,9 @@ function ProductPages(router) {
       var url = 'http://api.bestbuy.com/v1/products(modelNumber='+req.query.modelNumber+')?show=URL,manufacturer,active,modelNumber,name,sku,largeImage,height,width,depth,salePrice,features.feature,details.name,details.value&format=json&apiKey='+apikeys.bbapi
       console.log('got ProductRender request for '+req.query.modelNumber)
 
-      //add logic to pull from DB or pull from internet
-
-      //var fs = require('fs');
-      //var results = {};
-      //results = JSON.parse(fs.readFileSync(url, 'utf8'));
       var json = null;
-      var request = require('request');
 
-      //write logic to make sure we have a search term or error out
+      //TODO write logic to make sure we have a search term or error out
 
       //call BB Api
       request(url, function (error, response, body) {
@@ -35,9 +29,6 @@ function ProductPages(router) {
 
           res.render('productpage',{'results':json});
       });
-
-
-
     }
 }
 
